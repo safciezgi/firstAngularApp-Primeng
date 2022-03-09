@@ -25,9 +25,14 @@
 }
 
 ::ng-deep .p-button {
-  background: rgb(226, 131, 43);
-  border: rgb(241, 100, 6);
-
+  // background: rgb(226, 131, 43);
+  // border: rgb(241, 100, 6);
+  color:black;
+  background: rgb(255, 255, 255);
+  border: 2px solid #000;
+  border-radius: 200%;
+  height:80px;
+  width:250px;
 }
 
 

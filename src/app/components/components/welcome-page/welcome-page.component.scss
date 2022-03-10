@@ -17,23 +17,21 @@
   min-height: 50%;
 }
 
-.button-position{
+#button-position{
   position: fixed;
-  left: 50%;
+  left: 40%;
   top: 40%;
-  transform: translate(-50%, -50%);
+  opacity: 0.9;
 }
 
-::ng-deep .p-button {
-  // background: rgb(226, 131, 43);
-  // border: rgb(241, 100, 6);
-  color:black;
-  background: rgb(255, 255, 255);
-  border: 2px solid #000;
-  border-radius: 200%;
-  height:80px;
-  width:250px;
-}
+// ::ng-deep .p-button {
+//   // background: rgb(226, 131, 43);
+//   // border: rgb(241, 100, 6);
+
+//   background: rgb(255, 255, 255);
+//   border: 2px solid #000;
+
+// }
 
 
 

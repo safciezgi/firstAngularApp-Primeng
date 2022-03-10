@@ -14,5 +14,5 @@ export class WelcomePageComponent implements OnInit {
   }
 
   title = 'welcome';
-  myImage:string = '/assets/img/welcomePage.png';
+  myImage:string = '/assets/img/welcomePageBase.png';
 }

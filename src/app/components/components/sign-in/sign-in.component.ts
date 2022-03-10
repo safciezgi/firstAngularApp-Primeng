@@ -14,6 +14,6 @@ export class SignInComponent {
     this.username = "";
     this.password = "";
   }
-
+  myImage:string = '/assets/img/background.png';
 }
 

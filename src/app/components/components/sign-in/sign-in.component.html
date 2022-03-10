@@ -1,27 +1,28 @@
-<p-card class="card-holder" [style]="{'width': '28rem', 'height': '27rem', 'margin-bottom': '10rem'}">
-  <ng-template pTemplate="header" >
-      <b>Sign In</b>
-      <hr style="opacity:0.5">
-  </ng-template>
-  <div [style]="{'margin-top': '-30px', 'margin-left': '20px'}">
-    <span class="p-float-label">
-    <h5>Username</h5>
-      <input id="float-input" placeholder="Username" type="text" pInputText [(ngModel)]="username"/>
-    <div [style]="{'margin-top': '50px'}"></div>
-    <h5>Password</h5>
-    <input placeholder="Password" type="password" pInputText [(ngModel)]="password"/>
-  </span>
-  <!-- <span class="p-float-label">
-        <p-password [(ngModel)]="value2"></p-password>
-    <label for="float-input">Username</label>
-  </span> -->
+<div id="bg">
+  <img [src]="myImage" alt="" >
+</div>
+<form>
+  <div class="nes-container with-title card-holder">
+    <p class="title">Sign In</p>
+    <ng-template pTemplate="header" >
 
-  </div>
-  <ng-template pTemplate="footer">
-    <p-button label="Login" [style]="{'margin-left': '20px'}"></p-button>
-    <div [style]="{'margin-left': '20px', 'margin-top': '10px'}">
-      <a style="color: rgb(27, 27, 27); margin-top: 10px; opacity: 0.5; font-size: small" [routerLink]="'/signUp'">New User? Click to Sign Up!!</a>
+    </ng-template>
+    <div [style]="{'margin-top': '2REM', 'margin-left': '20px'}">
+      <span class="p-float-label">
+      <h5>Username</h5>
+        <input id="float-input" placeholder="Username" type="text" pInputText [(ngModel)]="username"/>
+      <h5>Password</h5>
+      <input placeholder="Password" type="password" pInputText [(ngModel)]="password"/>
+    </span>
+    <!-- <span class="p-float-label">
+          <p-password [(ngModel)]="value2"></p-password>
+      <label for="float-input">Username</label>
+    </span> -->
+    <a class=" nes-btn is-primary">Sign In</a>
+    <div  [style]="{'margin-left': '20px'}">
+      <a style="color: rgb(27, 27, 27); opacity: 0.5; font-size: small;" [routerLink]="'/signUp'">New User? Click to Sign Up!!</a>
     </div>
-  </ng-template>
-</p-card>
 
+    </div>
+  </div>
+</form>

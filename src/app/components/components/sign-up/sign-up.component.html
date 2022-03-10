@@ -1,10 +1,13 @@
+<div id="bg">
+  <img [src]="myImage" alt="" >
+</div>
+
 <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
-  <p-card class="card-holder" [style]="{'width': '28rem', 'height': '38rem', 'margin-bottom': '10rem'}">
+  <div class="nes-container with-title card-holder">
+    <p class="title">Sign Up</p>
     <ng-template pTemplate="header" >
-        <b>Sign Up</b>
-        <hr style="opacity:0.5">
     </ng-template>
-    <div [style]="{'margin-top': '-2rem', 'margin-left': '20px'}">
+    <div [style]="{'margin-top': '2rem', 'margin-left': '20px'}">
       <span class="p-float-label">
       <h5>Full Name</h5>
         <input formControlName="fullName" id="float-input" placeholder="Name & Surname" type="text" pInputText >
@@ -15,12 +18,18 @@
         <h5>Password</h5>
         <input formControlName="passwd" id="float-input" placeholder="Password" type="password" pInputText >
       </span>
+      <a [style]="{'margin-top': '25px'}" type="submit" class=" nes-btn is-primary" >Sign Up</a>
+      <div [style]="{'margin-left': '20px', 'margin-top': '10px'}">
+        <a style="color: rgb(27, 27, 27); margin-top: 10px; opacity: 0.5; font-size: small;" [routerLink]="'/signIn'">Already Registered? Click to Sign In!!</a>
+      </div>
     </div>
-    <ng-template pTemplate="footer">
+    <!-- <ng-template pTemplate="footer">
+
       <p-button label="Sign Up" [style]="{'margin-left': '20px'}"></p-button>
       <div [style]="{'margin-left': '20px', 'margin-top': '10px'}">
         <a style="color: rgb(27, 27, 27); margin-top: 10px; opacity: 0.5; font-size: small;" [routerLink]="'/signIn'">Already Registered? Click to Sign In!!</a>
       </div>
-    </ng-template>
-  </p-card>
+    </ng-template> -->
+  </div>
+
 </form>
